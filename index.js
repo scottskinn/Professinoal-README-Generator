@@ -4,147 +4,139 @@ const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown.js')
 const { profile } = require('console');
 
-inquirer.prompt({
-    type: 'input', 
-    message: 'hello from inquirer'}).then(message => console.log(message))
 // TODO: Create an array of questions for user input
 const questions =  [{  
-            type: 'input',
-            name: 'name',
-            message: 'What is your project title?',
-            // validate user input to ensure title is entered.
-            validate: nameInput => {
-                if (nameInput) {
-                  return true;
-                } else {
-                  console.log('Please enter your project title!');
-                  return false;
-                }
+        type: 'input',
+        name: 'name',
+        message: 'What is your project title?',
+        // validate user input to ensure title is entered.
+        validate: nameInput => {
+            if (nameInput) {
+                return true;
+            } else {
+                console.log('Please enter your project title!');
+                return false;
             }
-        },
-        {
-            type: 'input',
-            name: "description",
-            message: 'Provide a description of the project (Required)',
-            validate: descriptionInput => {
-                if (descriptionInput) {
-                    return true;
-                } else {
-                    console.log('Please provide a description!');
-                    return false;
-                }
-            }
-        },
-        {
-            type: 'input',
-            name: "installation",
-            message: 'What are the steps required to install your project? (Required)',
-            validate: descriptionInput => {
-                if (descriptionInput) {
-                    return true;
-                } else {
-                    console.log('Please provide a description!');
-                    return false;
-                }
-            }
-        },
-        {
-            type: 'input',
-            name: "usage",
-            message: 'Provide instructions and examples for use. Include screenshots as needed. (Required)',
-            validate: descriptionInput => {
-                if (descriptionInput) {
-                    return true;
-                } else {
-                    console.log('Please provide a description!');
-                    return false;
-                }
-            }
-        },
-        {
-            type: 'checkbox',
-            name: "license",
-            message: 'Provide a list of the licenses that the application is covered under.  (Required)',
-            choices: [
-                'MIT License',
-                'Mozilla Public License 2.0', 
-                'GNU AGPLv3', 
-                'GNU GPLv3', 
-                'GNU LGPLv3', 
-                'Apache License 2.0'],
-            validate: descriptionInput => {
-                if (descriptionInput) {
-                    return true;
-                } else {
-                    console.log('Please provide a description!');
-                    return false;
-                }
-            }
-        },
-        {
-            type: 'input',
-            name: "contributing",
-            message: 'Provide your contributing guidelines (Required)',
-            validate: descriptionInput => {
-                if (descriptionInput) {
-                    return true;
-                } else {
-                    console.log('Please provide a description!');
-                    return false;
-                }
-            }
-        },
-        {
-            type: 'input',
-            name: "tests",
-            message: 'Provide a test description (Required)',
-            validate: descriptionInput => {
-                if (descriptionInput) {
-                    return true;
-                } else {
-                    console.log('Please provide a description!');
-                    return false;
-                }
-            }
-        },
-        {
-            type: 'input',
-            name: "github",
-            message: 'Provide your Github name (Required)',
-            validate: descriptionInput => {
-                if (descriptionInput) {
-                    return true;
-                } else {
-                    console.log('Please provide a description!');
-                    return false;
-                }
-            }
-        },
-        {
-            type: 'input',
-            name: "email",
-            message: 'Provide your Email address (Required)',
-            validate: descriptionInput => {
-                if (descriptionInput) {
-                    return true;
-                } else {
-                    console.log('Please provide a description!');
-                    return false;
-                }
-            }
-        },
-        // Need to add links to the choices
-        {
-            type: 'checkbox',
-            name: "tableOfContents",
-            message: 'Provide a table of contents if your README file is long (Optional)',
-            choices: ['Description', 'Installation', 'Usage', 'License', 'Contributing', 'Tests', 'Questions']
         }
-    
-    // .then(answers => {
-    //     const { description, installation, usage, license, contributing, tests, github, email } = answers;
-    // })
-
+    },
+    {
+        type: 'input',
+        name: "description",
+        message: 'Provide a description of the project (Required)',
+        validate: descriptionInput => {
+            if (descriptionInput) {
+                return true;
+            } else {
+                console.log('Please provide a description!');
+                return false;
+            }
+        }
+    },
+    {
+        type: 'input',
+        name: "installation",
+        message: 'What are the steps required to install your project? (Required)',
+        validate: descriptionInput => {
+            if (descriptionInput) {
+                return true;
+            } else {
+                console.log('Please provide a description!');
+                return false;
+            }
+        }
+    },
+    {
+        type: 'input',
+        name: "usage",
+        message: 'Provide instructions and examples for use. Include screenshots as needed. (Required)',
+        validate: descriptionInput => {
+            if (descriptionInput) {
+                return true;
+            } else {
+                console.log('Please provide a description!');
+                return false;
+            }
+        }
+    },
+    {
+        type: 'checkbox',
+        name: "license",
+        message: 'Provide a list of the licenses that the application is covered under.  (Required)',
+        choices: [
+            'MIT License',
+            'Mozilla Public License 2.0', 
+            'GNU AGPLv3', 
+            'GNU GPLv3', 
+            'GNU LGPLv3', 
+            'Apache License 2.0'],
+        validate: descriptionInput => {
+            if (descriptionInput) {
+                return true;
+            } else {
+                console.log('Please provide a description!');
+                return false;
+            }
+        }
+    },
+    {
+        type: 'input',
+        name: "contributing",
+        message: 'Provide your contributing guidelines (Required)',
+        validate: descriptionInput => {
+            if (descriptionInput) {
+                return true;
+            } else {
+                console.log('Please provide a description!');
+                return false;
+            }
+        }
+    },
+    {
+        type: 'input',
+        name: "tests",
+        message: 'Provide a test description (Required)',
+        validate: descriptionInput => {
+            if (descriptionInput) {
+                return true;
+            } else {
+                console.log('Please provide a description!');
+                return false;
+            }
+        }
+    },
+    {
+        type: 'input',
+        name: "github",
+        message: 'Provide your Github name (Required)',
+        validate: descriptionInput => {
+            if (descriptionInput) {
+                return true;
+            } else {
+                console.log('Please provide a description!');
+                return false;
+            }
+        }
+    },
+    {
+        type: 'input',
+        name: "email",
+        message: 'Provide your Email address (Required)',
+        validate: descriptionInput => {
+            if (descriptionInput) {
+                return true;
+            } else {
+                console.log('Please provide a description!');
+                return false;
+            }
+        }
+    },
+    // Need to add links to the choices
+    {
+        type: 'checkbox',
+        name: "tableOfContents",
+        message: 'Provide a table of contents if your README file is long (Optional)',
+        choices: ['Description', 'Installation', 'Usage', 'License', 'Contributing', 'Tests', 'Questions']
+    }  
 ];
 
 
@@ -163,11 +155,7 @@ function writeFile(fileName, data) {
 
 // TODO: Create a function to initialize app
 function init() {
-    // inquirer.prompt({
-    //     type: 'input', 
-    //     name: 'name',
-    //     message: 'hello from inquirer'}).then(message => console.log(message));
-
+    
     inquirer.prompt(questions).then(data => {
         
         writeFile('README.md', generateMarkdown(data));

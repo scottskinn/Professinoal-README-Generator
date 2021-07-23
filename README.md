@@ -1,6 +1,6 @@
 # [object Object]
 
-  # aa
+  # ReadMe Genorator
 
   # Table of Contents
 
@@ -10,27 +10,27 @@
   - [License](#license)
   - [Contributing](#contributing)
   - [Tests](#tests)
-  - [Questions](#questions, #email)
+  - [Questions](#github #email)
  
   ## Description:
 
-      ss
+      Generates a Readme file from users input
 
   ## Installation:
-      aa
+      Watch my video
 
   ## Usage:
-      aa
+      pics
 
   ## License:
       MIT License,Mozilla Public License 2.0,GNU AGPLv3,GNU GPLv3,GNU LGPLv3,Apache License 2.0
 
   ## Contributing:
-      aa
+      ask me
 
   ## Tests:
-      aa
+      Tests for your application
 
   ## Questions:
-      - [GitHub Profile](https://github.com/aa)
-      - If you have additional questions, please email me at: aa
+      - [GitHub Profile] href="https://github.com/scottskinn"
+      - If you have additional questions, please email me at: scottskinn@hotmail.com

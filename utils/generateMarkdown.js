@@ -44,7 +44,7 @@ function generateMarkdown(data) {
   - [License](#license)
   - [Contributing](#contributing)
   - [Tests](#tests)
-  - [Questions](#questions, #email)
+  - [Questions](#github #email)
  
   ## Description:
 
@@ -66,7 +66,7 @@ function generateMarkdown(data) {
       ${data.tests}
 
   ## Questions:
-      - [GitHub Profile](https://github.com/${data.github})
+      - [GitHub Profile] href="https://github.com/${data.github}"
       - If you have additional questions, please email me at: ${data.email}`;
 }
 
