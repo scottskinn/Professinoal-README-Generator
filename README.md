@@ -1,6 +1,7 @@
-# [object Object]
 
-  # ReadMe Genorator
+
+  # readme
+  ![Github license](https://img.shields.io/badge/licence-MIT,APACHE 2.0,GPL 3.0,BSD 3,None-blue.svg)
 
   # Table of Contents
 
@@ -10,27 +11,27 @@
   - [License](#license)
   - [Contributing](#contributing)
   - [Tests](#tests)
-  - [Questions](#github #email)
+  - [Questions](#github)
  
   ## Description:
 
-      Generates a Readme file from users input
+      readme
 
   ## Installation:
-      Watch my video
+      download files
 
   ## Usage:
       pics
-
-  ## License:
-      MIT License,Mozilla Public License 2.0,GNU AGPLv3,GNU GPLv3,GNU LGPLv3,Apache License 2.0
 
   ## Contributing:
       ask me
 
   ## Tests:
-      Tests for your application
+      test
 
   ## Questions:
-      - [GitHub Profile] href="https://github.com/scottskinn"
-      - If you have additional questions, please email me at: scottskinn@hotmail.com
+  [scottskinn](https://github.com/scottskinn/).
+  
+
+  [scottskinn@hotmail.com](mailto:scottskinn@hotmail.com)
+      - If you have additional questions, please email me at: <a href="mailto:scottskinn@hotmail.com"></a>;

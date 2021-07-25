@@ -62,13 +62,7 @@ const questions =  [{
         type: 'checkbox',
         name: "license",
         message: 'Provide a list of the licenses that the application is covered under.  (Required)',
-        choices: [
-            'MIT License',
-            'Mozilla Public License 2.0', 
-            'GNU AGPLv3', 
-            'GNU GPLv3', 
-            'GNU LGPLv3', 
-            'Apache License 2.0'],
+        choices: ['MIT', 'APACHE 2.0', 'GPL 3.0', 'BSD 3', 'None'],
         validate: descriptionInput => {
             if (descriptionInput) {
                 return true;
@@ -135,7 +129,14 @@ const questions =  [{
         type: 'checkbox',
         name: "tableOfContents",
         message: 'Provide a table of contents if your README file is long (Optional)',
-        choices: ['Description', 'Installation', 'Usage', 'License', 'Contributing', 'Tests', 'Questions']
+        choices: [
+            'Description', 
+            'Installation', 
+            'Usage', 
+            'License', 
+            'Contributing', 
+            'Tests', 
+            'Questions']
     }  
 ];
 
