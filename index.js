@@ -35,15 +35,15 @@ const questions =  [{
     {
         type: 'input',
         name: "installation",
-        message: 'What are the steps required to install your project? (Required)',
-        validate: descriptionInput => {
-            if (descriptionInput) {
-                return true;
-            } else {
-                console.log('Please provide a description!');
-                return false;
-            }
-        }
+        message: 'What are the steps required to install your project? (Optional)',
+        // validate: descriptionInput => {
+        //     if (descriptionInput) {
+        //         return true;
+        //     } else {
+        //         console.log('Please provide a description!');
+        //         return false;
+        //     }
+        // }
     },
     {
         type: 'input',
@@ -88,15 +88,15 @@ const questions =  [{
     {
         type: 'input',
         name: "tests",
-        message: 'Provide a test description (Required)',
-        validate: descriptionInput => {
-            if (descriptionInput) {
-                return true;
-            } else {
-                console.log('Please provide a description!');
-                return false;
-            }
-        }
+        message: 'Provide a test description (Optional)',
+        // validate: descriptionInput => {
+        //     if (descriptionInput) {
+        //         return true;
+        //     } else {
+        //         console.log('Please provide a description!');
+        //         return false;
+        //     }
+        // }
     },
     {
         type: 'input',
