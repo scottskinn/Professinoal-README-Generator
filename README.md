@@ -1,6 +1,6 @@
 
 
-  # dd
+  # Readme Generater
   
   ![Github license](https://img.shields.io/badge/licence-MIT-blue.svg)
 
@@ -16,26 +16,26 @@
  
   ## Description:
 
-      dd
+       WANT a README generator, SO THAT I can quickly create a professional README for a new project
 
   ## Installation:
-      dd
+      Download from Github
 
   ## Usage:
-      dd
+      Links for screenshots
 
   ## Contributing:
-      dd
+      Ask me if you would like to contribute
 
   ## License:
       MIT
 
   ## Tests:
-      dd
+      
 
   ## Questions:
 
   
-  [dd](https://github.com/dd/).
+  [scottskinn](https://github.com/scottskinn/).
   
-  [dd](mailto:dd)
+  [scottskinn@hotmail.com](mailto:scottskinn@hotmail.com)
