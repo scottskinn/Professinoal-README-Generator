@@ -22,12 +22,14 @@
     Then, run:
 
     ``` npm index.js ```
-    
+
     You will then be prompted to answer all the questions.
 
 ## Usage
 
-    Pics
+![installation](./images/install.jpg)
+
+![questions](./images/questions.jpg)
 
 ## Contributing
 

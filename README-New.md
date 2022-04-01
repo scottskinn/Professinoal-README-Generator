@@ -1,5 +1,5 @@
 
-# Read Me Generator
+# 1
 
 ## Table of Contents
 
@@ -8,30 +8,39 @@
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
+- [Tests](#tests)
 - [Questions](#questions)
 
 ## Description
 
-    Creats a read me after you answer all the questions.
+    2
 
 ## Installation
 
-    Clone from github
+    3
 
 ## Usage
 
-    Pics
+    4
 
 ## Contributing
 
-    Feel free to add question after you clone. Always open to adding more.
+    6
 
 ## License
 
-![Github license](https://img.shields.io/badge/licence-MIT-blue.svg)
+  MIT
+
+  ![Github license](https://img.shields.io/badge/licence-MIT-blue.svg)
+
+## Tests
+
+    6
 
 ## Questions
 
-[scottskinn](https://github.com/scottskinn/)
+    undefined
 
-[scottskinn2n@gmail.com](mailto:scottskinn2n@gmail.com)
+[6](https://github.com/6/)
+
+[6](mailto:6)
