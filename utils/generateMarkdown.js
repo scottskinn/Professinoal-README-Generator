@@ -32,46 +32,51 @@ This project is licensed under the ${license} license.`;
 function generateMarkdown(data) {
   
   return `
+# ${data.name}
 
-  # ${data.name}
-  
+## Table of Contents
+
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Tests](#tests)
+- [Questions](#questions)
+
+## Description
+
+    ${data.description}
+
+## Installation
+
+    ${data.installation}
+
+## Usage
+
+    ${data.usage}
+
+## Contributing
+
+    ${data.contributing}
+
+## License
+
+  ${data.license}
+
   ${renderLicenseBadge(data.license)}
 
-  # Table of Contents
+## Tests
 
-  - [Description](#description)
-  - [Installation](#installation)
-  - [Usage](#usage)
-  - [Contributing](#contributing)
-  - [License](#license)
-  - [Tests](#tests)
-  - [Questions](#github)
- 
-  ## Description:
+    ${data.tests}
 
-      ${data.description}
+## Questions
 
-  ## Installation:
-      ${data.installation}
+    ${data.questions}
 
-  ## Usage:
-      ${data.usage}
+[${data.github}](https://github.com/${data.github}/)
 
-  ## Contributing:
-      ${data.contributing}
-
-  ## License:
-      ${data.license}
-
-  ## Tests:
-      ${data.tests}
-
-  ## Questions:
-
-  
-  [${data.github}](https://github.com/${data.github}/).
-  
-  [${data.email}](mailto:${data.email})
+[${data.email}](mailto:${data.email})
 `};
 
 module.exports = generateMarkdown;

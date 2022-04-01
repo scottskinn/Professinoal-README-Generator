@@ -1,3 +1,4 @@
+
 # Read Me Generator
 
 ## Table of Contents
@@ -11,19 +12,11 @@
 
 ## Description
 
-    Creats a read me file in a few minutes, after you answer all the questions.
+    Creats a read me after you answer all the questions.
 
 ## Installation
 
-    Clone from github or download the zip file. From the command line, run:
-
-    ``` npm i or npm install ```
-
-    Then, run:
-
-    ``` npm index.js ```
-    
-    You will then be prompted to answer all the questions.
+    Clone from github
 
 ## Usage
 
