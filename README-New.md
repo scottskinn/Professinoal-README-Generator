@@ -1,5 +1,5 @@
 
-# 1
+# ss-crwn-clothing
 
 ## Table of Contents
 
@@ -13,19 +13,19 @@
 
 ## Description
 
-    2
+    E-commerce site made with react
 
 ## Installation
 
-    3
+    Fork from github
 
 ## Usage
 
-    4
+    pics
 
 ## Contributing
 
-    6
+    ZTM course
 
 ## License
 
@@ -33,14 +33,10 @@
 
   ![Github license](https://img.shields.io/badge/licence-MIT-blue.svg)
 
-## Tests
-
-    6
-
 ## Questions
 
     undefined
 
-[6](https://github.com/6/)
+[scottskinn](https://github.com/scottskinn/)
 
-[6](mailto:6)
+[scottskinn2n@gmail.com](mailto:scottskinn2n@gmail.com)

@@ -11,7 +11,8 @@
 
 ## Description
 
-    Creats a read me file in a few minutes, after you answer all the questions.
+    Creates a read me file in a few minutes, after you answer all the questions.
+    Follow the readme-guide.md to get started and for more tips.
 
 ## Installation
 
@@ -21,7 +22,7 @@
 
     Then, run:
 
-    ``` npm index.js ```
+    ``` node index.js ```
 
     You will then be prompted to answer all the questions.
 
